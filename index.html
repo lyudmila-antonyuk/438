@@ -1,45 +1,446 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap</title>
 
-    <!-- Подключение Bootstrap-стилей -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
-
-    <!-- Подключение собственных стилей -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
+        <title>Home | Promo Video Lab</title>
+    
+        <!-- Подключение Google-шрифтов - Ubuntu & Roboto -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;family=Ubuntu:wght@400;700&amp;display=swap" rel="stylesheet">
+        
+        <!-- Подключение таблицы стилей фреймворка Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    
+        <!-- Подключение собственных стилей -->
+    </head>
+<body>
+    <!-- HEADER (начало) -->
     <header>
-        <div class="container">
-            <div class="row">
-                <a class="col-3 col-lg-3" href="#">
-                    <img src="img/logo.svg" alt="PromoVideoLab" class="logo">
-                </a>
-                <nav class="col-9 col-lg-9">
-                    <ul class="main-menu justify-content-end justify-content-lg-between">
-                        <li class="d-none d-lg-block"><a href="#">Types of videos</a></li>
-                        <li class="d-none d-lg-block"><a href="#">Portfolio</a></li>
-                        <li class="d-none d-lg-block"><a href="#">Blog</a></li>
-                        <li><a class="btn" href="#">schedule a call</a></li>
-                        <li class="burger-menu d-lg-none"><button></button></li>
+		<div class="header container">
+			<div class="row justify-content-md-between">
+				<div class="col-4 col-md-2">
+					<a href="#">
+						<img class="logo" src="img/logo.svg" alt="Promo Video Lab">
+					</a>
+				</div>
+				<nav class="col-8 col-md-6 col-lg-9 offset-md-4 offset-lg-1 offset-xl-1">
+					<ul class="header-menu row justify-content-md-between align-items-center">
+						<li class="d-none d-lg-flex">
+							<a href="#" class="header-menu-link">Types of videos</a>
+						</li>
+						<li class="d-none d-lg-flex">
+							<a href="#" class="header-menu-link">Portfolio</a>
+						</li>
+						<li class="d-none d-lg-flex">
+							<a href="#" class="header-menu-link">Blog</a>
+						</li>
+						<li>
+							<a href="#" class="button">schedule a call </a>
+						</li>
+						<li>
+							<button class="header-burger d-flex d-lg-none">
+								<span></span>
+							</button>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+    <!-- HEADER (конец) -->
+    <!-- Секция PROMO (начало) -->
+    <section class="promo">
+		<div class="container">
+			<article class="row flex-column promo-content">
+				<h1 class="col-md-12 col-xl-5 text-center">
+					Animated explainer <span class="accent">video production</span><br> for businesses around the world!
+				</h1>
+				<p class="col-md-12 col-xl-6 text-center">
+					Stand out from competitors, elevate your brand and <br> improve conversions with
+	 				a 90-second corporate video!
+				</p>
+				<div class="row col-md-12 col-xl-6 justify-content-center">
+					<a class="button" href="#">Request a Quote</a>
+					<a class="button-play button-play-promo" href="#">
+						<div class="button-play-img button-play-img-promo"></div>
+						<span class="button-play-text">Play video</span>
+					</a>
+				</div>
+			</article>
+			<div class="promo-img"></div>
+		</div>
+	</section>
+        <!-- Секция PROMO (конец) -->
+        <!-- Секция COMPANIES (начало) -->
+        <section class="companies">
+            <div class="container">
+                <div class="row flex-column">
+                    <h2 class="companies-header col-12 text-center">Trusted by 1,500+ companies like…</h2>
+                    <ul class="companies-list row col-12 justify-content-between">
+                        <li class="col-4 col-lg-2">
+                            <a class="companies-link" href="#">
+                                <img src="./img/companies/visa.svg" alt="Visa">
+                            </a>
+                        </li>
+                        <li class="col-4 col-lg-2">
+                            <a class="companies-link" href="#">
+                                <img src="./img/companies/intel.svg" alt="Intel">
+                            </a>
+                        </li>
+                        <li class="col-4 col-lg-2">
+                            <a class="companies-link" href="#">
+                                <img src="./img/companies/drinks.svg" alt="Drinks">
+                            </a>
+                        </li>
+                        <li class="col-4 col-lg-2">
+                            <a class="companies-link" href="#">
+                                <img src="./img/companies/coinsource.svg" alt="Coinsource">
+                            </a>
+                        </li>
+                        <li class="col-4 col-lg-2">
+                            <a class="companies-link" href="#">
+                                <img src="./img/companies/porter-davis.svg" alt="Porterdavis">
+                            </a>
+                        </li>
+                        <li class="col-4 col-lg-2">
+                            <a class=" companies-link" href="#">
+                                <img src="./img/companies/net-suite.svg" alt="Netsuite">
+                            </a>
+                        </li>
                     </ul>
-                </nav>
+                </div>
             </div>
-        </div>
-    </header>    
+        </section>
+        <!-- Секция COMPANIES (конец) -->
+        <!-- Секция STEPS (начало) -->
+        <section class="steps">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="step row flex-column justify-content-top align-items-center col-12 col-md-6 col-lg-4">
+                        <h2 class="steps-title-header text-center">
+                            People LOOOVE explainer videos because they
+                        </h2>
+                        <a class="button" href="#"><div></div>schedule a call </a>
+                    </div>
+    
+                    <div class="step row flex-column align-items-center text-center col-12 col-md-6 col-lg-4">
+                        <img class="step-image" src="./img/steps/step-1.svg" alt="">
+                        <h3 class="step-header">
+                            QUICK 20 MINUTE CALL
+                        </h3>
+                        <p class="step-text text-center">
+                            Schedule a Free Call with our explainer video company to find out what works best for your business and why.
+                        </p>
+                    </div>
+    
+                    <div class="step row flex-column align-items-center col-12 col-md-6 col-lg-4">
+                        <img class="step-image" src="./img/steps/step-2.svg" alt="">	
+                        <h3 class="step-header">
+                            CREATIVE BRIEF
+                        </h3>
+                        <p class="step-text text-center">
+                            Fill out a short questionnaire to let us learn more about you and your target audience
+                        </p>
+                    </div>
+    
+                    <div class="step row flex-column align-items-center col-12 col-md-6 col-lg-4">
+                        <img class="step-image" src="./img/steps/step-3.svg" alt="">
+                        <h3 class="step-header">
+                            STORYBOARD
+                        </h3>
+                        <p class="step-text text-center">
+                            Check out a series of graphical thumbnails, which illustrate the breakdown of the video and tell us your thoughts about it.
+                        </p>
+                    </div>
+    
+                    <div class="step row flex-column align-items-center col-12 col-md-6 col-lg-4">
+                        <img class="step-image" src="./img/steps/step-4.svg" alt="">
+                        <h3 class="step-header">
+                            SCRIPT &amp; VOICE-OVER
+                        </h3>
+                        <p class="step-text text-center">
+                            Confirm the script, written by our scriptwriters and choose the voice-over talent from our list
+                        </p>
+                    </div>
+    
+                    <div class="step row flex-column align-items-center col-12 col-md-6 col-lg-4">
+                        <img class="step-image" src="./img/steps/step-5.svg" alt="">
+                        <h3 class="step-header">
+                            FINAL DELIVERY
+                        </h3>
+                        <p class="step-text text-center">
+                            Receive your completed explainer video in HD format (1080p) and get free tips on how to Rock Your Audience!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Секция STEPS (конец) -->
+        <!-- Секция PORTFOLIO (начало) -->
+        <section class="portfolio">
+		<div class="container flex-column flex-column align-items-center text-center">
+			<h2 class="portfolio-title col-12">Our works</h2>
 
-<!-- Подключение библиотеки jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+			<div class="portfolio-list row col-12 justify-content-between">
+				<div class="portfolio-item portfolio-item-first row flex-column-reverse col-12 col-md-6 col-xl-4">
+					<div class="portfolio-content row">
+						<a class="button-play" href="#">
+							<div class="button-play-img button-play-img-portfolio"></div>
+						</a>
+						<div class="portfolio-description row flex-column justify-content-around align-items-start">
+							<h3 class="portfolio-header">Explainer Video</h3>
+							<p class="portfolio-text">Graphic Animation</p>
+						</div>
+					</div>
+				</div>
 
-<!-- Подключение библиотеки popper -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+				<div class="portfolio-item portfolio-item-second row flex-column-reverse col-12 col-md-6 col-xl-4">
+					<div class="row portfolio-content">
+						<a class="button-play" href="#">
+							<div class="button-play-img button-play-img-portfolio"></div>
+						</a>
+						<div class="row flex-column justify-content-around align-items-start portfolio-description">
+							<h3 class="portfolio-header">CoinSchedule</h3>
+							<p class="portfolio-text">2D Cartoon Animation</p>
+						</div>
+					</div>
+				</div>
 
-<!-- Подключение скрипта Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+				<div class="portfolio-item portfolio-item-third row flex-column-reverse col-12 col-md-6 col-xl-4 d-none d-md-flex">
+					<div class="row portfolio-content">
+						<a class="button-play" href="#">
+							<div class="button-play-img button-play-img-portfolio"></div>
+						</a>
+						<div class="row flex-column justify-content-around align-items-start portfolio-description">
+							<h3 class="portfolio-header">Netsuite's Extension</h3>
+							<p class="portfolio-text">Graphic Animation</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="portfolio-item portfolio-item-fourth row flex-column-reverse col-12 col-md-6 col-xl-4 d-none d-xl-flex">
+					<div class="row portfolio-content">
+						<a class="button-play" href="#">
+							<div class="button-play-img button-play-img-portfolio"></div>
+						</a>
+						<div class="row flex-column justify-content-around align-items-start portfolio-description">
+							<h3 class="portfolio-header">Explainer Video</h3>
+							<p class="portfolio-text">Graphic Animation</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="portfolio-item portfolio-item-fifth row flex-column-reverse col-12 col-md-6 col-xl-4 d-none d-xl-flex">
+					<div class="row portfolio-content">
+						<a class="button-play" href="#">
+							<div class="button-play-img button-play-img-portfolio"></div>
+						</a>
+						<div class="row flex-column justify-content-around align-items-start portfolio-description">
+							<h3 class="portfolio-header">CoinSchedule</h3>
+							<p class="portfolio-text">2D Cartoon Animation</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="portfolio-item portfolio-item-more row flex-column col-12 col-md-6 col-xl-4">
+					<a class="button-play button-play-more" href="#">
+						<div class="button-play-img button-play-img-more"></div>
+						<h3 class="portfolio-more-text">View more videos</h3>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+        <!-- Секция PORTFOLIO (конец) -->
+        <!-- Секция ADVANTAGES (начало) -->
+        <section class="advantages">
+            <div class="container">
+                <div class="row flex-column align-items-center">
+                    <h2 class="advantages-title col-12 text-center">People LOOOVE explainer videos because they</h2>
+    
+                    <div class="row justify-content-between">
+                        <div class="advantages-item advantages-item-one row flex-column col-12 col-md-6 col-lg-4 text-center">
+                            <img class="advantages-image" src="./img/advantages/item-1.svg" alt="">
+                            <h3 class="advantages-item-header">ATTRACT</h3>
+                            <p class="advantages-item-text">Grab attention of your audience with a short yet super engaging explainer video</p>
+                        </div>
+    
+                        <div class="advantages-item advantages-item-two row flex-column col-12 col-md-6 col-lg-4 text-center">
+                            <img class="advantages-image" src="./img/advantages/item-2.svg" alt="">
+                            <h3 class="advantages-item-header">CONVERT</h3>
+                            <p class="advantages-item-text">Improve your website conversion rate by as much as 80%</p>
+                        </div>
+    
+                        <div class="advantages-item advantages-item-three row flex-column col-12 col-md-6 col-lg-4 text-center">
+                            <img class="advantages-image" src="./img/advantages/item-3.svg" alt="">
+                            <h3 class="advantages-item-header">SHARE</h3>
+                            <p class="advantages-item-text">Upload your brand-new explainer video on YouTube, Vimeo and share on social media sites</p>
+                        </div>
+    
+                        <div class="advantages-item advantages-item-four row flex-column col-12 col-md-6 col-lg-4 text-center">
+                            <img class="advantages-image" src="./img/advantages/item-4.svg" alt="">
+                            <h3 class="advantages-item-header">RANK</h3>
+                            <p class="advantages-item-text">Make people stay on your website longer and improve your ranking in Google</p>
+                        </div>
+    
+                        <div class="advantages-item advantages-item-five row flex-column col-12 col-md-6 col-lg-4 text-center">
+                            <img class="advantages-image" src="./img/advantages/item-5.svg" alt="">
+                            <h3 class="advantages-item-header">BUILD</h3>
+                            <p class="advantages-item-text">Build your brand and business personality with a help of an explainer 
+                                video designed in your corporate style and colours by our brand video production team</p>
+                        </div>
+    
+                        <div class="advantages-item advantages-item-six row flex-column col-12 col-md-6 col-lg-4 text-center">
+                            <img class="advantages-image" src="./img/advantages/item-6.svg" alt="">
+                            <h3 class="advantages-item-header">SIMPLIFY</h3>
+                            <p class="advantages-item-text">Simplify your complex for understanding message with an engaging 90-second video</p>
+                        </div>	
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Секция ADVANTAGES (конец) -->
+        <!-- Секция REVIEWS (начало) -->
+        <section class="reviews">
+            <div class="container">
+                <div class="reviews-title row justify-content-center">
+                    <h2 class="reviews-title-header">Customers reviews</h2>
+                    <div class="reviews-title-buttons row">
+                        <button class="button-play-img button-arrow-left"></button>
+                        <button class="button-play-img button-arrow-right"></button>	
+                    </div>
+                </div>
+    
+                <div class="row justify-content-between">
+                        <div class="review row flex-column align-items-center col-12 col-md-6 col-lg-4">
+                            <div class="review-image">
+                                <img src="./img/reviews/visa.svg" alt="Visa">
+                            </div>
+                            <img src="./img/reviews/stars.svg" alt="stars">
+                            <p class="review-text text-center">
+                                This is my personal recommendation. I am familiar with dozens of animation production companies, 
+                                but these guys are experts in what they are doing! 
+                                Easy to communicate with and show fantastic team working skills
+                            </p>
+                            <p class="review-caption text-center">
+                                Melissa Hagarty, Marketing<br> Director at Bova UK
+                            </p>
+                            <a class="button-play button-play-review align-self-center" href="#">
+                                View
+                                <div class="button-play-img button-play-img-review"></div>
+                                video
+                            </a>
+                        </div>
+    
+                        <div class="review row flex-column align-items-center col-6 col-lg-4 d-none d-md-flex">
+                            <div class="review-image">
+                                <img src="./img/reviews/cision.svg" alt="Cision">
+                            </div>
+                            <img src="./img/reviews/stars.svg" alt="stars">
+                            <p class="review-text text-center">
+                                You guys are very talented and your commercial video production team truly delivers high production value. 
+                                Very excited to see another app demo video you’ll produce for us!
+                            </p>
+                            <p class="review-caption text-center">
+                                Sam Hornstein, <br>CEO at Extend Tech
+                            </p>
+                            <a class="button-play button-play-review align-self-center" href="#">
+                                View
+                                <div class="button-play-img button-play-img-review"></div>
+                                video
+                            </a>
+                        </div>
+    
+                        <div class="review row flex-column align-items-center col-4 d-none d-lg-flex">
+                            <div class="review-image">
+                                <img src="./img/reviews/bragshare.svg" alt="Bragshare">
+                            </div>
+                            <img src="./img/reviews/stars.svg" alt="stars">
+                            <p class="review-text text-center">
+                                Worked with Alex, Mike, and the rest of the team to strategically figure out, design, 
+                                and build out a simple, compelling, and informative animated 
+                                whiteboard startup video for our new social media platform.
+                            </p>
+                            <p class="review-caption text-center">
+                                Chad Gundry, CEO at Bragshare<br> Social Media
+                            </p>
+                            <a class="button-play button-play-review align-self-center" href="#">
+                                View
+                                <div class="button-play-img button-play-img-review"></div>
+                                video
+                            </a>
+                        </div>
+                </div>
+    
+                <div class="reviews-pages row justify-content-center align-items-center d-none d-lg-flex">
+                    <button class="reviews-page active"></button>
+                    <button class="reviews-page"></button>
+                </div>
+            </div>
+        </section>
+        <!-- Секция REVIEWS (конец) -->
+        <!-- FOOTER (начало) -->
+        <footer>
+            <div class="container">
+                <div class="footer-top row">
+                    <div class="footer-form row col-12 flex-column flex-lg-row align-items-center justify-content-center justify-content-lg-between text-center text-lg-left">
+                        <div>
+                            <h2 class="footer-form-header">Ready to start your video? </h2>
+                            <p class="footer-form-text">Let’s talk!  </p>
+                        </div>
+                        <a class="button" href="#">schedule a call </a>
+                    </div>
+                </div>
+    
+                <div class="footer-bottom row justify-content-between">
+                    <div class="footer-bottom-left row col-12 flex-column align-items-center align-items-lg-start col-lg-6">
+                        <ul class="footer-social row align-items-lg-end">
+                            <li>
+                                <a href="#">
+                                    <img class="logo" src="./img/logo.svg" alt="Promo Video Lab">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="youtube" href="#">
+                                    <img src="./img/footer/yt.svg" alt="youtube">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="linkedin" href="#">
+                                    <img src="./img/footer/in.svg" alt="linkedin">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="facebook" href="#">
+                                    <img src="./img/footer/fb.svg" alt="facebook">
+                                </a>
+                            </li>
+                        </ul>
+                        <p class="footer-copy">© Copyright promoVideoLab, 2019</p>
+                    </div>
+    
+                    <div class="footer-bottom-right row col-12 flex-column align-items-center align-items-lg-end col-lg-6">
+                        <a class="footer-email" href="mailto:info@promovideolab.com">info@promovideolab.com</a>
+                        <div class="footer-links align-items-end">
+                            <a href="#">Terms and conditions</a>
+                            <a href="#">Privacy policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <!-- FOOTER (конец) -->
+    <!-- Подключение скриптов (начало) -->
+    <!-- Библиотека jQuery и Popper -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <!-- Скрипт фреймворка Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Подключение скриптов (конец) -->
 </body>
+
 </html>
