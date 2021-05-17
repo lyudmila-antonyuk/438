@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача №20</title>
+	<link rel="stylesheet" href="../css/js2.css">
+</head>
+
+<body>
+	<h1>Задача №20</h1>
+	<p><b>Напишите код, который принимает от пользователя число, представляющее собой массу тела в граммах, и выводящую на
+			экран массу этого тела в килограммах.</b></p>
+	<p>let a;<br>
+
+		a = +prompt('Как думаете, сколько весит Ваша рука в граммах?');<br>
+		if (!a && typeof a == "object") {<br>
+		alert("Вы отменили!");<br>
+		} else if (a == "") {<br>
+		alert("Вы ничего не ввели!");<br>
+		} else if (isNaN(a)) {<br>
+		alert("Это не число!");<br>
+		} else {<br>
+		alert(`А в килограммах - это вот сколько: ${a / 1000} кг`);<br>
+		}
+
+	</p>
+	<script src="../js/tasks/task_20.js"></script>
+</body>
+
+</html>

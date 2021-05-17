@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задача №2</title>
+    <link rel="stylesheet" href="../css/js2.css">
+</head>
+
+<body>
+    <h1>Задача №2</h1>
+    <p><b>Пользователь вводит длину оснований трапеции (a и b), а также высоту трапеции h.
+            Программа выводит сообщение: «Площадь трапеции будет равна `значение`». Площадь
+            вычисляется по формуле ((a + b) / 2) * h, где a, b - основания, h - высота.</b></p>
+    <p>
+        let a, b; //стороны трапеции<br>
+        let h; //высота трапеции<br>
+        let S; //искомая площадь трапеции<br>
+
+        let result = ""; //строка с результатом<br>
+
+        a = +prompt("Сторона a:");<br>
+        b = +prompt("Сторона b:");<br>
+        h = +prompt("Высота h:");<br>
+
+        if(a больше 0 && b больше 0 && h больше 0) {<br>
+        S = ((a + b) / 2) * h;<br>
+        result = `Площадь трапеции со сторонами a = ${a}, b = ${b}\nи высотой h = ${h} равна ${S}.`<br>
+        }<br>
+        else {<br>
+        result = "Неверные данные!!! Площадь невозможно посчитать!";<br>
+        }<br>
+        alert(result);<br>
+    </p>
+    <script src="../js/tasks/task_2.js"></script>
+</body>
+
+</html>

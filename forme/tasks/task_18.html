@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача №18</title>
+	<link rel="stylesheet" href="../css/js2.css">
+</head>
+
+<body>
+	<h1>Задача №18</h1>
+	<p><b>Напишите фрагмент кода, который принимает от пользователя число и выводит на экран новое число, которое больше
+			введенного с клавиатуры в 10 раз.</b></p>
+	<p>
+		let a, b, c;<br>
+
+		a = +prompt("Введите любое число:");<br>
+
+		if (!a && typeof a == "object") {<br>
+		alert("Вы отменили!");<br>
+		} else if (a == "") {<br>
+		alert("Вы ничего не ввели!");<br>
+		} else if (isNaN(a)) {<br>
+		alert("Это не число!");<br>
+		} else {<br>
+		b = (a * 10);<br>
+		alert(`Ваше число ${a}, увеличенное в 10 раз, равно ${b}`);<br>
+		}<br>
+	</p>
+	<script src="../js/tasks/task_18.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задача №1</title>
+    <link rel="stylesheet" href="../css/js2.css">
+</head>
+
+<body>
+    <h1>Задача №1</h1>
+    <p><b>Программа хранит в двух переменных курс доллара и евро. В первой переменной у вас
+            хранится стоимость одного евро в рублях, во второй - стоимость одного доллара в рублях.
+            Вы спрашиваете у пользователя, сколько рублей он хочет сконвертировать, получаете это
+            число и считаете. Результат надо вывести на страницу с помощью alert.</b></p>
+    <p>let kursDollara = 74.8;<br>
+        let kursEuro = 90.5;<br>
+        let sumDollars = 0, sumEuro = 0;<br>
+
+        let rubles = prompt("Сумма в рублях:");<br>
+
+        if(!rubles && typeof rubles == "object") {<br>
+        alert("Вы отменили!!!");<br>
+        }<br>
+        else {<br>
+        if(rubles == "") {<br>
+        alert("Вы ничего не ввели!!!");<br>
+        }<br>
+        else {<br>
+        if(isNaN(+rubles)) {<br>
+        alert("Это не число!");<br>
+        }<br>
+        else {<br>
+        sumDollars = (rubles/kursDollara).toFixed(2);<br>
+        sumEuro = (rubles/kursEuro).toFixed(2);<br>
+
+        alert(`Сумма в долларах = ${sumDollars}$, сумма в евро = ${sumEuro}\u20AC`);<br>
+        }<br>
+        }<br>
+        }</p>
+    <script src="../js/tasks/task_1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задача №3</title>
+    <link rel="stylesheet" href="../css/js2.css">
+</head>
+
+<body>
+    <h1>Задача №3</h1>
+    <p><b>Пользователь вводит сумму вклада и процент, который будет начисляться ежегодно.
+            Отобразить размер вклада поочередно на ближайшие 5 лет.</b></p>
+    <p>
+        let sum; //сумма вклада <br>
+        let percent; //годовой процент<br>
+        let countYears; //кол-во лет<br>
+        let result; //итоговая строка с выводом<br>
+
+        let endWordYears = ""; //строка, содержащая "год(а)", "лет"<br>
+
+        sum = Number(prompt("Сумма вклада:"));<br>
+        percent = Number(prompt("Годовой %:"));<br>
+        countYears = Number(prompt("Период вклада (лет):"));<br>
+
+        for(let i = 1; i меньше = countYears; i++) { sum +=sum * percent / 100; //1 год, 21 год //2, 3, 4<br>
+        года //5,6,7,8,9,10 лет + 11 лет! if(i !=11 && i % 10==1) { endWordYears="год" ; } else if((iбольше= 5 &&
+        i<br>
+        меньше= 20) || (i % 10 больше= 5 && i % 10 меньше= 9 ) || (i % 10)==0) { endWordYears="лет" ; } else {<br>
+        endWordYears="года" ; } result +=`Через ${i} ${endWordYears} сумма=${sum.toFixed(2)}\n`;<br>
+        console.log(`Через ${i} ${endWordYears} сумма=${sum.toFixed(2)}`); } alert(result);<br>
+    </p>
+    <script src="../js/tasks/task_3.js"></script>
+</body>
+
+</html>

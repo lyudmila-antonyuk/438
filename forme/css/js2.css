@@ -1,0 +1,43 @@
+html,
+body {
+    background-image: url('../img/pexels-matteo-badini-4064432.jpg');
+    background-repeat: no-repeat;
+    font-family: 'Ubuntu', 'Tahoma', sans-serif;
+    padding: 3px;
+    margin: 3px;
+}
+
+h1 {
+    padding: 30px;
+    color: rgb(37, 25, 139);
+
+}
+
+li>a {
+    padding: 10px;
+    margin: 10px;
+    color: rgb(156, 51, 19);
+
+}
+
+li {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; */
+    padding: 3px;
+    color: rgb(156, 51, 19);
+
+}
+
+li>a:hover {
+    color: rgb(247, 110, 68)
+}
+
+p {
+    color: rgb(6, 77, 55, 0.7);
+    padding: 30px;
+    margin: 20px;
+    text-align: center;
+
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задача №6</title>
+    <link rel="stylesheet" href="../css/js2.css">
+</head>
+
+<body>
+    <h1>Задача №6</h1>
+    <p><b>Даны переменные a = 10 и b = 3. Найдите остаток от деления a на b.</b></p>
+    <p>
+        let a, b;<br>
+
+        a = prompt("Введите первое число:");<br>
+        if (!a && typeof a == "object") {<br>
+        alert("Вы отменили!");<br>
+        } else if (a == "") {<br>
+        alert("Вы ничего не ввели!");<br>
+        } else if (isNaN(a)) {<br>
+        alert("Это не число!");<br>
+        } else {<br>
+        b = +prompt("Введите второе число:");<br>
+        if (!b && typeof b == "object") {<br>
+        alert("Вы отменили!");<br>
+        } else if (b == "") {<br>
+        alert("Вы ничего не ввели!");<br>
+        } else if (isNaN(b)) {<br>
+        alert("Это не число!");<br>
+        } else {<br>
+
+        alert(`Остаток от деления ${a} на ${b} составляет ${a % b}`);<br>
+        }<br>
+        }<br>
+    </p>
+    <script src="../js/tasks/task_6.js"></script>
+</body>
+
+</html>

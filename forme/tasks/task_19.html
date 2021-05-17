@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача №19</title>
+	<link rel="stylesheet" href="../css/js2.css">
+</head>
+
+<body>
+	<h1>Задача №19</h1>
+	<p><b>Напишите код, который принимает от пользователя число и затем выводит на экран следующие три значения (все – в
+			одной строке, разделенные пробелом): число, меньше введенного с клавиатуры на 1, число, введенное с клавиатуры, и
+			число, больше введенного с клавиатуры на 1.</b></p>
+	<p>let a;<br>
+
+		a = +prompt('Введите любое число:');<br>
+		if (!a && typeof a == "object") {<br>
+		alert("Вы отменили!");<br>
+		} else if (a == "") {<br>
+		alert("Вы ничего не ввели!");<br>
+		} else if (isNaN(a)) {<br>
+		alert("Это не число!");<br>
+		} else {<br>
+		alert(`${a - 1} ${a} ${a + 1}`);<br>
+		}<br>
+	</p>
+	<script src="../js/tasks/task_19.js"></script>
+</body>
+
+</html>

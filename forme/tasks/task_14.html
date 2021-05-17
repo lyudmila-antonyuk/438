@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача №14</title>
+	<link rel="stylesheet" href="../css/js2.css">
+</head>
+
+<body>
+	<h1>Задача №14</h1>
+	<p><b>Напишите фрагмент кода, который присваивает переменной х значение типа Number, а
+			затем присваивает переменной треть от значения переменной х. Выводить результат на
+			экран.</b></p>
+
+	<p>let x, y;<br>
+		x = +prompt("Введите любое число:");<br>
+		if (!x && typeof x == "object") {<br>
+		alert("Вы отменили!");<br>
+		} else if (x == "") {<br>
+		alert("Вы ничего не ввели!");<br>
+		} else if (isNaN(x)) {<br>
+		alert("Это не число!");<br>
+		} else {<br>
+		y = x / 3;<br>
+		alert(`Треть от числа ${x} равна ${y}`);<br>
+		}
+	</p>
+	<script src="../js/tasks/task_14.js"></script>
+</body>
+
+</html>

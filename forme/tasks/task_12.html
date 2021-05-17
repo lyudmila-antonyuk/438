@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача №12</title>
+	<link rel="stylesheet" href="../css/js2.css">
+</head>
+
+<body>
+	<h1>Задача №12</h1>
+	<p><b>Напишите фрагмет кода который будет присваивать значение 7.5 переменной х, а затем
+			переменным a и b будет присваивать значения вдвое и втрое (соответственно) большие
+			значения переменной х. Вывести эти значения на экран.</b></p>
+
+	<p>
+		let x, a, b;<br>
+
+		x = prompt("Введите число:");<br>
+
+		if (!x && typeof x == "object") {<br>
+		alert("Вы отменили!");<br>
+		} else if (x == "") {<br>
+		alert("Вы ничего не ввели!");<br>
+		} else if (isNaN(x)) {<br>
+		alert("Это не число!");<br>
+		} else {<br>
+
+		a = +prompt("Во сколько раз Вы хотите увеличить Ваше число?");<br>
+		if (!a && typeof a == "object") {<br>
+		alert("Вы отменили!");<br>
+		} else if (a == "") {<br>
+		alert("Вы ничего не ввели!");<br>
+		} else if (isNaN(a)) {<br>
+		alert("Это не число!");<br>
+		} else {<br>
+
+		b = x * a;<br>
+		alert(`Ваше число ${x}, увеличенное в ${a} раз, равно ${b}`);<br>
+		}<br>
+		}
+	</p>
+	<script src="../js/tasks/task_12.js"></script>
+</body>
+
+</html>
